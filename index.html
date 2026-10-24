@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>User Directory</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>User Directory</h1>
+    <p>Search for users by name.</p>
+    <input id="search" type="search" placeholder="Search by name" aria-label="Search by name" autocomplete="off">
+  </header>
+
+  <p id="message">Loading users...</p>
+  <main id="grid"></main>
+
+  <!-- Details popup -->
+  <dialog id="modal">
+    <div class="modal-head">
+      <img id="m-img" alt="">
+      <div>
+        <h2 id="m-name"></h2>
+        <p id="m-sub"></p>
+      </div>
+      <button id="close" type="button">Close</button>
+    </div>
+
+    <div class="info-grid">
+      <section class="info-card">
+        <h3>Personal information</h3>
+        <div id="m-personal"></div>
+      </section>
+
+      <section class="info-card">
+        <h3>Address</h3>
+        <div id="m-address"></div>
+      </section>
+
+      <section class="info-card">
+        <h3>Job</h3>
+        <div id="m-job"></div>
+      </section>
+
+      <section class="info-card">
+        <h3>Company</h3>
+        <div id="m-company"></div>
+      </section>
+    </div>
+  </dialog>
+
+  <script src="app.js"></script>
+</body>
+</html>
